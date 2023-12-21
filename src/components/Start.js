@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Start.css";
 
 function Logo() {
@@ -6,23 +7,23 @@ function Logo() {
 }
 function Btn1() {
     return (
-        <a className="btn1">
-            <img src="../img/2023btn.png" alt="2023btn"></img>
-        </a>
+        <Link to="/dukdam2023" className="btn1">
+            <img src="/img/2023btn.png" alt="2023btn"></img>
+        </Link>
     );
 }
 function Btn2() {
     return (
-        <a className="btn2">
-            <img src="../img/2024btn.png" alt="2024btn"></img>
-        </a>
+        <Link to="/dukdam2024" className="btn2">
+            <img src="/img/2024btn.png" alt="2024btn"></img>
+        </Link>
     );
 }
 function Btn3() {
     return (
-        <a className="btn3">
-            <img src="./img/writeBtn.png" alt="writeBtn"></img>
-        </a>
+        <Link className="btn3">
+            <img src="/img/writeBtn.png" alt="writeBtn"></img>
+        </Link>
     );
 }
 

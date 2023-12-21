@@ -1,5 +1,6 @@
 import React from "react";
 import "./Letters2024.css";
+import { Link } from "react-router-dom";
 
 function Title() {
     return <img className="title" src="/img/start2024.png" alt="title"></img>;
@@ -7,18 +8,18 @@ function Title() {
 
 function Letter() {
     return (
-        <a className="letter">
+        <Link className="letter">
             <img className="letterImg" src="/img/letter.png"></img>
             <p className="letterUser">User</p>
-        </a>
+        </Link>
     );
 }
 
 function AddBtn() {
     return (
-        <a className="addDukdam">
+        <Link className="addDukdam">
             <img src="/img/add.png"></img>
-        </a>
+        </Link>
     );
 }
 

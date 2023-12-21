@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Letters2023.css";
 
 function Title() {
@@ -7,18 +8,18 @@ function Title() {
 
 function Letter() {
     return (
-        <a className="letter">
+        <Link className="letter">
             <img className="letterImg" src="/img/letter.png"></img>
             <p className="letterUser">User</p>
-        </a>
+        </Link>
     );
 }
 
 function AddBtn() {
     return (
-        <a className="addDukdam">
+        <Link className="addDukdam">
             <img src="/img/add.png"></img>
-        </a>
+        </Link>
     );
 }
 
